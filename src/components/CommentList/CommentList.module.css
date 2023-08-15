@@ -1,0 +1,11 @@
+.comment-list-wrapper {
+  height: 80vh;
+}
+
+.comment-list-wrapper div:last-child {
+  margin-bottom: var(--space-1);
+}
+
+.comment-list-wrapper > div > div > * + * {
+  margin-top: var(--space-4);
+}

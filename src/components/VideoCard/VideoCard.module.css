@@ -1,0 +1,41 @@
+.card-video {
+  border-radius: max(var(--radius-2), var(--radius-full));
+  overflow: hidden;
+  border: 2px solid var(--mauve-6);
+}
+
+.card-video-overlay {
+  background: hsl(260, 10.0%, 13.5%);
+  background: linear-gradient(0deg, hsl(260, 10.0%, 13.5%), transparent, transparent);
+  transition: all ease-in-out 200ms;
+}
+
+.card-video-overlay-content {
+  opacity: 0;
+  transition: all ease-in-out 200ms;
+}
+
+.card-video:hover .card-video-overlay {
+  opacity: 0.6;
+  background: hsl(260, 10.0%, 13.5%);
+}
+
+.card-video:hover .card-video-overlay-content {
+  opacity: 1;
+}
+
+.card-video-img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-video-title {
+  color: hsl(300, 26.0%, 99.0%);
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

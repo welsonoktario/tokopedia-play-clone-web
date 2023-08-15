@@ -1,0 +1,21 @@
+.product-card {
+  width: 200px;
+}
+
+.product-card-img {
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-4);
+}
+
+.product-card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.product-card-link {
+  width: 100%;
+}

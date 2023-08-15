@@ -1,0 +1,25 @@
+@import url(https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@1,2&display=swap);
+
+* {
+  font-family:
+    'Plus Jakarta Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
