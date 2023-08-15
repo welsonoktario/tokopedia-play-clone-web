@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react'
 export const useTheme = () => {
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)')
   const [theme, setTheme] = useState<'system' | 'light' | 'dark'>('system')
-  const [systemTheme, setSystemTheme] = useState<'light' | 'dark'>(
-    prefersDark.matches ? 'dark' : 'light',
-  )
+  const systemTheme = prefersDark.matches ? 'dark' : 'light'
 
   const bodyClasses = document.body.classList
   const isLight = bodyClasses.contains('light-theme')
